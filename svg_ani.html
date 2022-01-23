@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>svg_animation</title>
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<style>
+		body{
+			margin: 0 auto; padding: 0;
+			height: 100vh;
+			background: #e3f2fd;
+			display: flex; align-items: center; justify-content: center;
+		}
+		svg {
+			font-family: 'Russo One', sans-serif;
+			position: relative;
+			width: 100%; height: 100%;
+		}
+		svg text {
+			text-transform: uppercase;
+			animation: stroke 5s infinite alternate;
+			stroke-width: 2;
+			stroke: #365fa0;
+			font-size: 200px;
+			letter-spacing: 10px;
+		}
+		@keyframes stroke {
+			
+		0%   {
+			fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+			stroke-dashoffset: 20%; stroke-dasharray: 0 50%; stroke-width: 1;
+			}
+		10%   {
+			fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1);
+			stroke-dashoffset: 20%; stroke-dasharray: 0 50%; stroke-width: 1;
+			}		
+
+		60%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); }
+
+		70%  {fill: rgba(72,138,20,0); stroke: rgba(54,95,160,1); stroke-width: 2; }
+
+		90% {
+			fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+			stroke-dashoffset: -20%; stroke-dasharray: 50% 0; stroke-width: 0;
+			}
+		100% {
+			fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0); 
+			stroke-dashoffset: -20%; stroke-dasharray: 50% 0; stroke-width: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<svg viewBox="0 0 1920 937">
+		<text x="50%" y="50%" dy=".35em" text-anchor="middle">
+			KJH
+		</text>
+	</svg>
+</body>
+</html>
